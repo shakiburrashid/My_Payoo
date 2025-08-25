@@ -9,10 +9,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body>
-    <button class="btn btn-primary btn-sm">Primary</button>
-    <button class="btn btn-accent">Primary</button>
-<button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl btn-danger">Responsive</button>
+<body class="flex flex-col justify-center items-center w-full h-screen bg-[#f4f5f7]">
+    <!-- * Log in Form -->
+
+    <div class=" h-[150px] min-w-80 bg-[url('./assets/bg.png')] bg-cover flex justify-center items-center">
+        <img src="./assets/Group.png" alt="">
+    </div>
+
+
+     <form action="" class=" min-w-96 h-80 p-8 bg-white rounded-[24px]">
+        <p class="text-xl font-bold"> Mobile Number </p>
+        <input type="number" placeholder="Enter your number" class="input my-2 rounded-[32px] h-[52px]" /> <br>
+       <p class="text-xl font-bold"> 4 Digit Pin </p> 
+      <input type="password" placeholder="Enter 4 Digit Pin" class="input my-2 rounded-[32px] h-[52px]" /> <br>
+        <button class="btn bg-[#0874f2] text-white w-full mt-5 rounded-[32px] h-[53px] text-xl">Login</button>
+     </form>
 </body>
 
 </html>
