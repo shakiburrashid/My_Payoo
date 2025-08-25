@@ -1,5 +1,7 @@
-document.getElementById("submitButton").addEventListener("click",function(e){
+document.getElementById("submitButton").addEventListener("click",(e)=>{
     e.preventDefault()
+    console.log(e);
+    
     const number = 12345;
     const pin = 12345;
 
@@ -15,7 +17,7 @@ document.getElementById("submitButton").addEventListener("click",function(e){
     
 
     if(number === numberInputConvert && pin === pinInputConvert){
-       window.location.href='./Main.html'
+       window.location.href='./HomePage.html'
         
     } else
     {
