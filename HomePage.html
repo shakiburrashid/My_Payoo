@@ -24,7 +24,7 @@
             <div class="flex  items-center gap-2">
                 <img src="./assets/Group.png" alt="logo" class="h-15">
                 <div>
-                    <h2><span class="font-bold">$45000</span></h2>
+                    <h2 class="font-bold text-xl">$<span id="Balance">45000</span></h2>
                     <h2>Available Balance</h2>
                 </div>
             </div>
@@ -150,16 +150,16 @@
                         <option>Dutch Bangla Bank</option>
                     </select>
                     <p class="text-xl font-bold"> Bank Account Number </p>
-                    <input type="text" placeholder="Enter 11 digit account number" id="numberInput"
+                    <input type="text" placeholder="Enter 11 digit account number" id=""
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
                     <p class="text-xl font-bold"> Amount to Add </p>
-                    <input type="password" placeholder="Add Amount to withdraw" id="passwordInput"
+                    <input type="text" placeholder="Add Amount to withdraw" id="addAmount"
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
                     <p class="text-xl font-bold"> Pin Number </p>
-                    <input type="password" placeholder="Enter 4 digit pin number" id="passwordInput"
+                    <input type="password" placeholder="Enter 4 digit pin number" id=""
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
 
-                    <button id="submitButton"
+                    <button id="addMoneyButton"
                         class="btn bg-[#0874f2] text-white w-full mt-5 rounded-[32px] h-[53px] text-xl px-5 py-4">Add
                         Money</button>
                 </form>
@@ -180,16 +180,16 @@
                 <form action="" class=" min-w-96 h-[28rem] p-8 bg-white rounded-[24px]">
 
                     <p class="text-xl font-bold"> Agent Number </p>
-                    <input type="text" placeholder="Enter 11 digit account number" id="numberInput"
+                    <input type="text" placeholder="Enter 11 digit account number" id=""
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
                     <p class="text-xl font-bold"> Amount </p>
-                    <input type="password" placeholder="Enter amount to withdraw" id="passwordInput"
+                    <input type="text" placeholder="Enter amount to withdraw" id="cashoutBalance"
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
                     <p class="text-xl font-bold"> Pin Number </p>
-                    <input type="password" placeholder="Enter 4 digit pin number" id="passwordInput"
+                    <input type="password" placeholder="Enter 4 digit pin number" id=""
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
 
-                    <button id="submitButton"
+                    <button id="cashOut"
                         class="btn bg-[#0874f2] text-white w-full mt-5 rounded-[32px] h-[53px] text-xl px-5 py-4">Withdraw
                         Money</button>
                 </form>
@@ -211,16 +211,16 @@
                 <form action="" class=" min-w-96 h-[28rem] p-8 bg-white rounded-[24px]">
 
                     <p class="text-xl font-bold"> User Account Number </p>
-                    <input type="text" placeholder="Enter 11 digit account number" id="numberInput"
+                    <input type="text" placeholder="Enter 11 digit account number" id=""
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
                     <p class="text-xl font-bold"> Amount </p>
-                    <input type="password" placeholder="Enter amount to withdraw" id="passwordInput"
+                    <input type="text" placeholder="Enter amount to withdraw" id="amountSend"
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
                     <p class="text-xl font-bold"> Pin Number </p>
-                    <input type="password" placeholder="Enter 4 digit pin number" id="passwordInput"
+                    <input type="password" placeholder="Enter 4 digit pin number" id=""
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
 
-                    <button id="submitButton"
+                    <button id="sendMoney"
                         class="btn bg-[#0874f2] text-white w-full mt-5 rounded-[32px] h-[53px] text-xl px-5 py-4">Send
                         Now
                     </button>
@@ -244,10 +244,10 @@
                 <form action="" class=" min-w-96 h-[28rem] p-8 bg-white rounded-[24px]">
 
                     <p class="text-xl font-bold"> Enter Bonus Coupon </p>
-                    <input type="text" placeholder="Enter Your Coupon" id="numberInput"
+                    <input type="text" placeholder="Enter Your Coupon" id=""
                         class="input my-2 rounded-[32px] h-[52px] w-full" /> <br>
 
-                    <button id="submitButton"
+                    <button id="GetBonusSubmit"
                         class="btn bg-[#0874f2] text-white w-full mt-5 rounded-[32px] h-[53px] text-xl px-5 py-4">Get
                         Bonus
                     </button>
@@ -278,16 +278,16 @@
                         <option>Dutch Bangla Bank</option>
                     </select>
                     <p class="text-xl font-bold"> Biller Account Number </p>
-                    <input type="text" placeholder="Enter 11 digit account number" id="numberInput"
+                    <input type="text" placeholder="Enter 11 digit account number" id=""
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
                     <p class="text-xl font-bold"> Amount to Pay </p>
-                    <input type="password" placeholder="Add Amount to withdraw" id="passwordInput"
+                    <input type="text" placeholder="Add Amount to withdraw" id=""
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
                     <p class="text-xl font-bold"> Pin Number </p>
-                    <input type="password" placeholder="Enter 4 digit pin number" id="passwordInput"
+                    <input type="password" placeholder="Enter 4 digit pin number" id=""
                         class="input my-2 rounded-[32px] h-[52px]" /> <br>
 
-                    <button id="submitButton"
+                    <button id="PayBillSubmit"
                         class="btn bg-[#0874f2] text-white w-full mt-5 rounded-[32px] h-[53px] text-xl px-5 py-4">Pay
                         Now</button>
                 </form>
@@ -299,7 +299,7 @@
 
 
     <!-- ! Transaction Payment -->
-    <section id="Transaction" class="hidden" >
+    <section id="Transaction" class="hidden">
         <section class="h-[500px] w-[27rem] mx-auto my-5">
             <div class="flex justify-between items-center">
                 <h1 class="font-bold text-3xl">Latest Payment</h1>
@@ -369,7 +369,8 @@
 
 
     <!-- ! Script Cdn -->
-    <script src="./script.js"></script>
+    <script src="./ItemBoxFunction.js"></script>
+    <script src="./Script.js"></script>
 
 </body>
 
