@@ -108,3 +108,13 @@ document.getElementById('sendMoney').addEventListener("click",(e)=>{
     let amountSend = parseInt(document.getElementById('amountSend').value)
     document.getElementById("Balance").innerText = availableBalance - amountSend
 })
+
+
+// * Pay bill Money Button Function
+
+document.getElementById('PayBillSubmit').addEventListener("click",(e)=>{
+    e.preventDefault();
+    let availableBalance = parseInt(document.getElementById("Balance").innerText);
+    let PayBill = parseInt(document.getElementById('PaybillCount').value)
+    document.getElementById("Balance").innerText = availableBalance - PayBill
+})
