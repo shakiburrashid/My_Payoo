@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Add money </title>
     <!-- ! Tailwind and DaisyUI Cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -16,7 +16,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="mx-auto bg-[#f4f5f7] w-[450px]">
+<body class="mx-auto bg-[#f4f5f7] w-[450px] h-[80rem]">
     <section class=" bg-white h-[40rem] rounded-b-[24px]">
         <div class="h-[150px] w-[25rem] border-b-1 border-[#666768] m-auto flex justify-between items-center ">
             <div class="flex  items-center gap-2">
@@ -27,7 +27,8 @@
                 </div>
             </div>
             <div>
-                <button class="btn text-[#08080880] rounded-lg"> <i class="fa-solid fa-arrow-right-from-bracket rotate-180 "></i>Log Out</button>
+                <button class="btn text-[#08080880] rounded-lg"> <i
+                        class="fa-solid fa-arrow-right-from-bracket rotate-180 "></i>Log Out</button>
             </div>
 
         </div>
@@ -75,54 +76,35 @@
 
 
 
-    <!-- ! Latest Payment -->
-    <section class="h-[500px] w-[27rem] mx-auto my-5">
-        <div class="flex justify-between items-center">
-            <h1 class="font-bold text-3xl">Latest Payment</h1>
-            <p class=" text-[#08080880]">View All</p>
+    <!-- ! Payment -->
+    <section class="h-15 w-[27rem] mx-auto my-5 mb-20">
+        <div class="flex justify-between items-center mb-5">
+            <h1 class="font-bold text-xl">Add Money</h1>
         </div>
         <!--* list -->
         <section>
-            <div class="my-7 bg-white flex justify-between items-center h-20 px-4 py-3 rounded-[12px]">
-                <div class="flex gap-3">
-                    <img src="./assets/wallet1.png" alt="" class="h-12">
-                    <div>
-                        <h1 class="text-xl font-semibold">Electricity Bill</h1>
-                        <p>Today 01:44 AM</p>
-                    </div>
-                </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-            <div class="my-7 bg-white flex justify-between items-center h-20 px-4 py-3 rounded-[12px]">
-                <div class="flex gap-3">
-                    <img src="./assets/wallet1.png" alt="" class="h-12">
-                    <div>
-                        <h1 class="text-xl font-semibold">Electricity Bill</h1>
-                        <p>Today 01:44 AM</p>
-                    </div>
-                </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-            <div class="my-7 bg-white flex justify-between items-center h-20 px-4 py-3 rounded-[12px]">
-                <div class="flex gap-3">
-                    <img src="./assets/wallet1.png" alt="" class="h-12">
-                    <div>
-                        <h1 class="text-xl font-semibold">Electricity Bill</h1>
-                        <p>Today 01:44 AM</p>
-                    </div>
-                </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
-            <div class="my-7 bg-white flex justify-between items-center h-20 px-4 py-3 rounded-[12px]">
-                <div class="flex gap-3">
-                    <img src="./assets/wallet1.png" alt="" class="h-12">
-                    <div>
-                        <h1 class="text-xl font-semibold">Electricity Bill</h1>
-                        <p>Today 01:44 AM</p>
-                    </div>
-                </div>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </div>
+            <form action="" class=" min-w-96 h-[33rem] p-8 bg-white rounded-[24px]">
+                <p class="text-xl font-bold"> Select a bank </p>
+                <select class="select input my-2 rounded-[32px] h-[52px] cursor-pointer text-[#08080866]">
+                    <option disabled selected>Select a bank</option>
+                    <option>Ucb Bank</option>
+                    <option>Isalami Bank</option>
+                    <option>Dutch Bangla Bank</option>
+                </select>
+                <p class="text-xl font-bold"> Bank Account Number </p>
+                <input type="text" placeholder="Enter 11 digit account number" id="numberInput"
+                    class="input my-2 rounded-[32px] h-[52px]" /> <br>
+                <p class="text-xl font-bold"> Amount to Add </p>
+                <input type="password" placeholder="Add Amount to withdraw" id="passwordInput"
+                    class="input my-2 rounded-[32px] h-[52px]" /> <br>
+                <p class="text-xl font-bold"> Pin Number </p>
+                <input type="password" placeholder="Enter 4 digit pin number" id="passwordInput"
+                    class="input my-2 rounded-[32px] h-[52px]" /> <br>
+
+                <button id="submitButton"
+                    class="btn bg-[#0874f2] text-white w-full mt-5 rounded-[32px] h-[53px] text-xl px-5 py-4">Add
+                    Money</button>
+            </form>
         </section>
 
     </section>
